@@ -1,0 +1,103 @@
+<form bindsubmit="formSubmit">
+<view wx:if="{{index==0}}">
+
+
+<view  class="outer flex ">
+  <view  class="fon-30">
+    装运日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2000-08-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+         <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+<!--船名  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  船名:
+</view>
+ <view class='right-1'>
+  <input name="ShipName"></input>
+ </view>
+</view>
+
+<!--提单号  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  提单号:
+</view>
+ <view class='right-1'>
+  <input  name="Rno"></input>
+ </view>
+</view>
+
+<!--装运港  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  装运港:
+</view>
+ <view class='right-1'><input name="Shipment"/></view>
+</view>
+
+<!--到货港  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  到货港:
+</view>
+ <view class='right-1'><input name="HavePort"></input></view>
+</view>
+
+<!--到港日期  -->
+<view  class="outer flex ">
+  <view  class="fon-30">
+    到港日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date2}}" start="2000-01-01" end="2999-09-01" bindchange="bindDateChange2">
+          <view class="weui-input">{{date2}}</view>
+        </picker>
+         <icon bindtap='cancel2' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date3}}" start="{{date2}}" end="2999-09-01" bindchange="bindDateChange3">
+          <view class="weui-input">{{date3}}</view>
+        </picker>
+         <icon bindtap='cancel3' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+</view>
+
+
+<!--index==2  -->
+
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>

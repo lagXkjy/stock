@@ -1,0 +1,54 @@
+/* time.wxss */
+page{
+  background-color: #f0f2f5;
+}
+.outer{
+  align-items: center;
+  -webkit-align-items: center;
+  height: 103rpx;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  border-bottom: 1px solid #e3e3e3;
+  background-color:#fff;
+}
+
+.zhi{
+  margin: 0 10rpx;
+}
+.speal{
+  align-items: center;
+  -webkit-align-items: center;
+}
+.rig-img{
+  height: 33rpx;
+  width: 21rpx;
+}
+.footer{
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0 20rpx;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  border-bottom: 1px solid #e3e3e3;
+  height: 103rpx;
+  background-color:#fff;
+}
+.button{
+  width: 90%;
+  margin: 30rpx auto;
+}
+.spe-fo{
+  align-items: center;
+  -webkit-align-items: center;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #e3e3e3;
+  height: 103rpx;
+  line-height: 103rpx;
+  background-color:#fff;
+}
+.right-1{
+  flex: 1;
+  -webkit-flex: 1;
+  font-size:30rpx;
+}

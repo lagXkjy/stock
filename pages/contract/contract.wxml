@@ -1,0 +1,139 @@
+<form bindsubmit="formSubmit">
+<view>
+
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  商品ID:
+</view>
+ <view class='right-1'>
+  <input name="GoodsId"></input>
+ </view>
+</view>
+
+
+<!--订购日期  -->
+<view  class="outer flex ">
+  <view  class="fon-30">
+    订购日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2017-08-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+         <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+<!--订单号  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  订单号：
+</view>
+ <view class='right-1'>
+  <input name="OrderNO"></input>
+ </view>
+</view>
+
+<!--生产厂家  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  生产厂家：
+</view>
+ <view class='right-1'>
+  <input name="Creater"></input>
+ </view>
+</view>
+
+
+<!--商品名称  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  商品名称:
+</view>
+ <view class='right-1'><input name="GoodsName"/></view>
+</view>
+
+<!--使用日期  -->
+<view  class="outer flex ">
+  <view  class="fon-30">
+    使用日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date2}}" start="2017-08-01" end="2999-09-01" bindchange="bindDateChange2">
+          <view class="weui-input">{{date2}}</view>
+        </picker>
+         <icon bindtap='cancel2' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date3}}" start="{{date2}}" end="2999-09-01" bindchange="bindDateChange3">
+          <view class="weui-input">{{date3}}</view>
+        </picker>
+         <icon bindtap='cancel3' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+
+
+<!--损耗数量  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  损耗数量:
+</view>
+ <view class='right-1'><input name="BreakNum"></input></view>
+</view>
+
+<!--损耗价值  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  损耗价值:
+</view>
+ <view class='right-1'><input name="BreakSumv"></input></view>
+</view>
+
+<!--损耗认定人  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  损耗认定人:
+</view>
+ <view class='right-1'><input name="BreakCheck"></input></view>
+</view>
+
+
+
+<!--库存数量  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  库存数量:
+</view>
+ <view class='right-1'><input name="StoreNum"></input></view>
+</view>
+
+</view>
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>

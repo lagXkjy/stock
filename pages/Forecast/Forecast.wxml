@@ -1,0 +1,222 @@
+<!--time.wxml-->
+
+<view wx:if="{{content==0}}">
+<form bindreset="formReset" bindsubmit="formSubmit">
+<view  class="outer flex ">
+  <view  class="fon-30">
+    预报检日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2000-01-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+         <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+<!--预检验检疫单编码  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  预检验检疫单编码:
+</view>
+ <view class='right-1'>
+  <input name="CheckoutID"></input>
+ </view>
+</view>
+
+<!--原产国  -->
+<view hidden='{{true}}'  class="flex spe-fo">
+<view  class="fon-30 flex">
+  原产国:
+</view>
+ <view class='right-1'>
+  <input  name="guojia"></input>
+ </view>
+</view>
+
+<!--ren  -->
+<view hidden='{{true}}'   class="flex spe-fo">
+<view  class="fon-30 flex">
+  收货人:
+</view>
+ <view class='right-1'><input name="shouhuorn"></input></view>
+</view>
+
+<!--货物名称  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物ID:
+</view>
+ <view class='right-1'><input name="GoodName"></input></view>
+</view>
+
+<!--测试  -->
+<!-- <view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  测试:
+</view>
+ <view class='right-1 ceshia'><input bindinput="bindKeyInput" name="GoodName"></input>
+  <view hidden='{{showQQ}}' class='ceshib'>{{inputValue}}</view>
+ </view>
+</view> -->
+
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+
+</form>
+</view>
+
+
+
+
+
+
+
+
+<!--报检日期  -->
+ <view wx:if="{{content==1}}">
+<form bindreset="formReset" bindsubmit="formSubmit">
+<view  class="outer flex ">
+  <view  class="fon-30">
+    报检日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2010-01-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+      <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+<!--预检验检疫单编码  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  检验检疫单编码:
+</view>
+ <view class='right-1'>
+  <input name="InspectionID"></input>
+ </view>
+</view>
+
+<!--预检验检疫单编码  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  预检验检疫单编码:
+</view>
+ <view class='right-1'>
+  <input name="CheckoutID"></input>
+ </view>
+</view>
+
+<!--原产国  -->
+<view  hidden='{{true}}'  class="flex spe-fo">
+<view  class="fon-30 flex">
+  原产国:
+</view>
+ <view class='right-1'>
+  <input  name="guojia"></input>
+ </view>
+</view>
+
+<!--货物名称  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物ID:
+</view>
+ <view class='right-1'><input name="GoodName"/></view>
+</view>
+
+<!--收货人  -->
+<view  hidden='{{true}}'  class="flex spe-fo">
+<view  class="fon-30 flex">
+  收货人:
+</view>
+ <view class='right-1'><input name="Consignee"/></view>
+</view>
+
+<!--品牌  -->
+<view hidden='{{true}}'   class="flex spe-fo">
+<view  class="fon-30 flex">
+  品牌:
+</view>
+ <view class='right-1'><input name="Brand"></input></view>
+</view>
+
+<!--中国总代理商  -->
+<view  hidden='{{true}}'  class="flex spe-fo">
+<view  class="fon-30 flex">
+  中国总代理商:
+</view>
+ <view class='right-1'><input name="Chinese"></input></view>
+</view>
+
+
+<!--出证日期  -->
+<view hidden='{{true}}'   class="outer flex ">
+  <view  class="fon-30">
+    出证日期
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date2}}" start="--选择时间--" end="2999-09-01" bindchange="bindDateChange2">
+          <view class="weui-input">{{date2}}</view>
+        </picker>
+         <icon bindtap='cancel2' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date3}}" start="{{date2}}" end="2999-09-01" bindchange="bindDateChange3">
+          <view class="weui-input">{{date3}}</view>
+        </picker>
+         <icon bindtap='cancel3' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>
+</view>
+
+
+
+

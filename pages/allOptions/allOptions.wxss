@@ -1,0 +1,2 @@
+/* pages/allOptions/allOptions.wxss */
+@import"../Option/Option"

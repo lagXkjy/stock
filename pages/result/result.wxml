@@ -1,0 +1,30 @@
+<!--result.wxml-->
+<scroll-view  class="scroll-view_H" scroll-x="true"  style="width: 100%">
+
+<view class="flex">
+  <view class='ceshi' wx:for="{{list}}">
+      <view class='odd' wx:for="{{item}}">
+          <view class='name-top'>{{item.name}}</view>
+          <view class='value-top'>{{item.value}}</view>
+      </view> 
+  </view> 
+</view> 
+
+</scroll-view>
+<view class="footer-last">左右滑动查看</view>
+
+<view class='flex1'>
+  <view class='shang' bindtap='shangyi'>
+    上一页
+  </view>
+  <view  class='inpu-l'>
+  <input type='number' bindblur="shuru" placeholder='输入页数'></input>
+  </view>
+  <view class='shang ranga'>总页数{{Colums}}/{{nowpage}} </view>
+  <view bindtap='suosuo' class='shang'>
+    搜索
+  </view>
+  <view class='shang' bindtap='xiayiye'>
+    下一页
+  </view>
+</view>

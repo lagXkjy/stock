@@ -1,0 +1,26 @@
+page{
+  background-color: #f0f2f5;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.image{
+  height: 150rpx;
+  width: 150rpx;
+  margin-right: 30rpx;
+  margin-left: 47rpx;
+}
+.outer{
+  height: 185rpx;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 20rpx;
+}

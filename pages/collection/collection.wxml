@@ -1,0 +1,149 @@
+<form bindsubmit="formSubmit">
+<view>
+
+<!--货物ID  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物ID:
+</view>
+ <view class='right-1'><input name="GoodsId"></input></view>
+</view>
+
+
+<!--发货单号  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  发货单号:
+</view>
+ <view class='right-1'>
+  <input name="SendNo"></input>
+ </view>
+</view>
+<!--发货日期  -->
+<view  class="outer flex ">
+  <view  class="fon-30">
+    发货日期:
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2017-08-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+         <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+         <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+<!--物流公司  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  物流公司:
+</view>
+ <view class='right-1'>
+  <input  name="Wuliu"></input>
+ </view>
+</view>
+
+<!--收货人  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  收货人:
+</view>
+ <view class='right-1'><input name="Consignee"/></view>
+</view>
+
+
+
+<!--货物名称  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物名称:
+</view>
+ <view class='right-1'><input name="GoodsName"></input></view>
+</view>
+
+<!--品牌  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  品牌:
+</view>
+ <view class='right-1'><input name="Brand"></input></view>
+</view>
+
+<!--包装  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  包装:
+</view>
+ <view class='right-1'><input name="Paking"></input></view>
+</view>
+
+<!--收货联系人  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  收货联系人:
+</view>
+ <view class='right-1'><input name="ConnectMan"></input></view>
+</view>
+
+<!--联系电话  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  联系电话:
+</view>
+ <view class='right-1'><input name="Tel"></input></view>
+</view>
+
+<!--收货地址  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  收货地址:
+</view>
+ <view class='right-1'><input name="Address"></input></view>
+</view>
+
+<!--收货日期  -->
+<view  class="outer flex ">
+  <view  class="fon-30">
+    收货日期:
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date2}}" start="2017-08-01" end="2999-09-01" bindchange="bindDateChange2">
+          <view class="weui-input">{{date2}}</view>
+        </picker>
+         <icon bindtap='cancel2' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date3}}" start="{{date2}}" end="2999-09-01" bindchange="bindDateChange3">
+          <view class="weui-input">{{date3}}</view>
+        </picker>
+         <icon bindtap='cancel3' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view>
+
+</view>
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>

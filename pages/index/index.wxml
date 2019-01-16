@@ -1,0 +1,7 @@
+
+<view class="outer">
+  <view data-index="{{item.index}}" bindtap="remove" wx:for="{{list}}" wx:for-item="item" class="contain">
+    <image class="image" src="{{item.url}}"></image>
+    <view class="fon-30">{{item.text}}</view>
+  </view>
+</view>

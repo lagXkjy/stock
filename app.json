@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+   
+    
+    "pages/Tosell/Tosell",
+    "pages/logs/logs",
+    "pages/ding/ding",
+    "pages/Forecast/Forecast",
+    "pages/result/result",
+    "pages/time/time",
+    "pages/Option/Option",
+    "pages/allOptions/allOptions",
+    "pages/allOptionsO/allOptions",
+    "optionall/optiontime/optiontime",
+    "pages/remittance/remittance",
+    "pages/Location/Location",
+    "pages/contract/contract",
+    "pages/collection/collection",
+    "pages/broken/broken",
+    "pages/sampling/sampling",
+    "pages/procurement/procurement",
+    "pages/indexResult/indexResult",
+    "pages/Levellocation/Levellocation"
+    
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#b5000e",
+    "navigationBarTitleText": "公司查询",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#c2313d",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "公司查询",
+        "iconPath": "images/chaxunhui_03.png",
+        "selectedIconPath": "images/search_03.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "检验检疫查询",
+        "iconPath": "images/jian_03.png",
+        "selectedIconPath": "images/yanhong_03.png"
+      }
+    ]
+  }
+}

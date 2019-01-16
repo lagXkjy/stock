@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+
+<image mode='widthFix' class='login' src='../../images/logn_03.jpg'></image>
+<form bindsubmit="formSubmit">
+  <view class='flex outer'>
+    <image class='img' mode='widthFix' src='../../images/name_07.png'></image>
+    <input value="{{name}}" placeholder-class='mingZi' placeholder='用户名' class='input' name="name"></input>
+  </view>
+<view class='flex outer'>
+    <image class='img' mode='widthFix' src='../../images/password_10.png'></image>
+    <input value="{{password}}"  type='password' placeholder-class='mingZi' placeholder='密码' class='input' name="passWord"></input>
+  </view>
+  <view>
+    <button formType="submit" class='button'>登录</button>
+  </view>
+</form>

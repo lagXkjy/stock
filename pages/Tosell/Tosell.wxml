@@ -1,0 +1,123 @@
+<form bindsubmit="formSubmit">
+
+<view >
+<!--货物id -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物ID:
+</view>
+ <view class='right-1'>
+  <input name="GoodsId"></input>
+ </view>
+</view>
+<!--库位号  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  级别:
+</view>
+ <view class='right-1'>
+  <input name="Level"></input>
+ </view>
+</view>
+
+<!--货物名称  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物名称:
+</view>
+ <view class='right-1'>
+  <input name="GoodsName"></input>
+ </view>
+</view>
+
+
+<!--酒精度  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒精度:
+</view>
+ <view class='right-1'>
+  <input name="Alcoholcontent"></input>
+ </view>
+</view>
+
+
+<!--年份  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  年份:
+</view>
+ <view class='right-1'>
+  <input  name="data"></input>
+ </view>
+</view>
+
+
+
+<!--酒帽  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒帽:
+</view>
+ <view class='right-1'>
+  <input  name="WinePer"></input>
+ </view>
+</view>
+
+<!--酒塞  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒塞:
+</view>
+ <view class='right-1'><input name="WineSor"/></view>
+</view>
+
+<!--酒瓶  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒瓶:
+</view>
+ <view class='right-1'><input name="WineBottle"></input></view>
+</view>
+
+<!--采购合同  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  采购合同:
+</view>
+ <view class='right-1'><input name="Pno"></input></view>
+</view>
+
+
+
+<!--销售合同  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  销售合同:
+</view>
+ <view class='right-1'><input name="Sno"></input></view>
+</view>
+
+<!--品牌  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  品牌:
+</view>
+ <view class='right-1'><input name="Trademark"></input></view>
+</view>
+
+</view>
+
+
+
+
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>

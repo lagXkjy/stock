@@ -1,0 +1,28 @@
+<!--Option.wxml-->
+<view class="content">
+  <view bindtap="allselect"  class="outer flex">
+    <view   class="flex center">
+      <view wx:if="{{allselect}}" class="yuan"></view>
+      <icon wx:else type="success" size="25"/>
+      <view  class="fon-30 ming">
+        全选
+      </view>
+    </view>
+      <icon hidden="{{allselect}}" type="success_no_circle" size="25"/>
+  </view>
+  <view bindtap="select" wx:for="{{list}}"  wx:for-item="item" data-index="{{item.index}}" class="outer flex">
+    <view   class="flex center">
+      <view wx:if="{{item.select}}" class="yuan"></view>
+      <icon wx:else type="success" size="25"/>
+      <view  class="fon-30 ming">
+        {{item.name}}
+      </view>
+    </view>
+      <icon hidden="{{item.select}}" type="success_no_circle" size="25"/>
+  </view>
+</view>
+
+<view class="classname">
+
+<button  bindtap="navto" class="button bg-red fff">确定</button>
+</view>

@@ -1,0 +1,148 @@
+<form bindsubmit="formSubmit">
+
+<view wx:if="{{index==5}}">
+
+<!--货物id -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物ID:
+</view>
+ <view class='right-1'>
+  <input name="GoodsId"></input>
+ </view>
+</view>
+
+<!--货物名称  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  货物名称:
+</view>
+ <view class='right-1'>
+  <input name="GoodsName"></input>
+ </view>
+</view>
+
+<!--酒精度  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒精度:
+</view>
+ <view class='right-1'>
+  <input name="Alcoholcontent"></input>
+ </view>
+</view>
+
+<!--级别  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  级别:
+</view>
+ <view class='right-1'>
+  <input name="Level"></input>
+ </view>
+</view>
+
+<!--年份  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  年份:
+</view>
+ <view class='right-1'>
+  <input name="Year"></input>
+ </view>
+</view>
+
+
+
+
+
+
+
+
+
+<!-- <view  class="outer flex ">
+  <view  class="fon-30">
+    年份
+  </view>
+  <view class="flex speal">
+  
+      <view class="kuang">
+     <picker mode="date" value="{{date}}" start="2000-01-01" end="2999-09-01" bindchange="bindDateChange">
+          <view class="weui-input">{{date}}</view>
+        </picker>
+        <icon bindtap='cancel' class='cancel' type="clear" size="15"/>
+  </view>
+  <view class=" zhi fon-24">
+    至
+  </view>
+  <view class="kuang">
+     <picker mode="date" value="{{date1}}" start="{{date}}" end="2999-09-01" bindchange="bindDateChange1">
+          <view class="weui-input">{{date1}}</view>
+        </picker>
+        <icon bindtap='cancel1' class='cancel' type="clear" size="15"/>
+  </view>
+  </view>
+</view> -->
+
+
+
+<!--酒帽  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒帽:
+</view>
+ <view class='right-1'>
+  <input  name="WinePer"></input>
+ </view>
+</view>
+
+<!--酒塞  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒塞:
+</view>
+ <view class='right-1'><input name="WineSor"/></view>
+</view>
+
+<!--酒瓶  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  酒瓶:
+</view>
+ <view class='right-1'><input name="WineBottle"></input></view>
+</view>
+<!--葡萄品种  -->
+<view class="flex spe-fo">
+<view  class="fon-30 flex">
+  葡萄品种:
+</view>
+ <view class='right-1'>
+  <input name="Grape"></input>
+ </view>
+</view>
+
+
+<!--口味  -->
+<view  class="flex spe-fo">
+<view  class="fon-30 flex">
+  口味:
+</view>
+ <view class='right-1'><input name="Flover"></input></view>
+</view>
+
+
+</view>
+
+
+
+
+
+
+<view bindtap="xuaXiang" class="flex footer">
+<view  class="fon-30">
+  显示选项
+</view>
+<image class="rig-img" src="../../images/right_03.png"></image>
+</view>
+<button formType="submit" class="button bg-red fff">查询</button>
+</form>

@@ -1,0 +1,16 @@
+/* pages/ding/ding.wxss */
+page{
+  background-color: #f0f2f5;
+}
+image{
+  width: 110rpx;
+  display: block;
+  margin:auto;
+  margin-top: 199rpx;
+}
+view{
+  font-size: 37rpx;
+  text-align: center;
+  margin-top: 60rpx;
+  color:#808080;
+}

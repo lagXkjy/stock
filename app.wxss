@@ -1,0 +1,60 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+   display: -webkit-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+    -webkit-align-items: center;
+  -webkit-justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.fon-32{
+  font-size: 32rpx;
+}
+.fon-24{
+   font-size: 24rpx;
+}
+.a1{
+  color:#a1a1a1;
+}
+.flex{
+  display: flex;
+   display: -webkit-flex;
+}
+.bg-fff{
+  background-color: #fff;
+}
+.fon-30{
+  font-size: 30rpx;
+}
+page{
+  font-family: "黑体"
+}
+.bg-red{
+  background-color:#7d0005;
+  }
+.fff{
+  color:#fff;
+}
+.kuang{
+  height: 47rpx;
+  line-height: 47rpx;
+  border:1px solid #e3e3e3;
+  font-size: 24rpx;
+  color:#a1a1a1;
+  width: 230rpx;
+  padding-left: 10rpx;
+  position: relative;
+}
+.cancel{
+  position: absolute;
+  right: 5rpx;
+  top: 8rpx;
+}
+.ceshi .odd:nth-child(2n){
+  background-color: #e3e3e3;
+}

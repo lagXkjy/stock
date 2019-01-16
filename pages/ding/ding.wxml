@@ -1,0 +1,7 @@
+<!--pages/ding/ding.wxml-->
+<image mode='widthFix' src='../../images/ding_03.png'>
+
+</image>
+<view>
+  该页面功能正在开发中！
+</view>
